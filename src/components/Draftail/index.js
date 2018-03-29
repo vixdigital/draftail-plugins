@@ -13,11 +13,6 @@ export { default as EmbedBlock } from './blocks/EmbedBlock';
 
 export { default as ModalWorkflowSource } from './sources/ModalWorkflowSource';
 
-// Import controls
-import SentimentAnalysis from "../Controls/sentiment/draftail-component";
-import ReadingLevel from "../Controls/readinglevel/draftail-component";
-import ReadingTime from "../Controls/readingtime/draftail-component";
-
 import {
   INLINE_CONTROL,
   BLOCK_CONTROL,
@@ -30,7 +25,7 @@ import {
  */
 const PLUGINS = {};
 const DECORATORS = [];
-const CONTROLS = [SentimentAnalysis,ReadingLevel,ReadingTime];
+const CONTROLS = [];
 
 const registerPlugin = (plugin) => {
   PLUGINS[plugin.type] = plugin;
@@ -106,7 +101,7 @@ const initEditor = (selector, options, currentScript) => {
     <DraftailEditor
       rawContentState={rawContentState}
       onSave={serialiseInputValue}
-      placeholder="Write here"
+      placeholder="Write here..."
       spellCheck={true}
       enableLineBreak={{
         description: "Line Break",
@@ -125,7 +120,6 @@ const initEditor = (selector, options, currentScript) => {
         description: "Horizontal Rule",
       }}
       decorators={DECORATORS}
-      controls={CONTROLS}
       blockTypes={[
           BLOCK_CONTROL.HEADER_TWO,
           BLOCK_CONTROL.HEADER_THREE,

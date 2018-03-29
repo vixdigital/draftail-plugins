@@ -29,40 +29,61 @@
                     </p>
                 </div>
             </header>
-            <h2>Demo</h2>
-            <p>Try out our draftail plugins in the editor below!</p>
-            <div class="editor-entry">
-                <input type="text" id="test" value="null" />
+            <div>
+                <h2>
+                    Sentiment Analysis -
+                    <a href="http://github.com/vixdigital/wagtail-sentiment">GitHub</a> /
+                    <a href="https://pypi.org/project/wagtail-sentiment/">PyPi</a>
+                </h2>
+                <p>
+                    Provides an overall sentiment analysis result for text. Calculated using the
+                    <a href="https://www.npmjs.com/package/sentiment">sentiment</a>
+                    NPM package.
+                </p>
+                <div class="editor-entry">
+                    <input type="text" id="sentiment-demo" value="null" />
+                </div>
             </div>
             <hr class="divider">
-            <h2>Sources</h2>
             <div>
-                <h4>VIX Plugins</h4>
-                <ul>
-                    <li>
-                        Reading Level (Experimental Branch) - <a href="https://github.com/vixdigital/wagtail-readinglevel/tree/experimental-new-api-functionality"/>Github</a>
-                        / <a href="https://pypi.org/project/wagtail-readinglevel/3.0.2b0/">PyPi</a>
-                    </li>
-                    <li>
-                        Sentiment Analysis - <a href="http://github.com/vixdigital/wagtail-sentiment">Github</a>
-                        / <a href="https://pypi.org/project/wagtail-sentiment/">PyPi</a>
-                    </li>
-                </ul>
-                <h4>Ported Plugins</h4>
-                <ul>
-                    <li>
-                        Reading Time - <a href="https://github.com/vixdigital/wagtail-reading-time">Github</a>
-                        / <a href="https://pypi.org/project/wagtail-readingtime/">PyPi</a> ported from 
-                        <a href="https://github.com/springload/draftail/tree/master/examples/components">Draftail example components</a>.
-                    </li>
-                </ul>
-                <h4>Templates and Tutorials</h4>
-                <ul>
-                    <li>
-                        Plugin Development Template - <a href="https://github.com/vixdigital/wagtail-plugin-base">Github</a> 
-                    </li>
-                </ul>
+                <h2>
+                    Reading Level (Experimental Branch) -
+                    <a href="https://github.com/vixdigital/wagtail-readinglevel/tree/experimental-new-api-functionality">GitHub</a> /
+                    <a href="https://pypi.org/project/wagtail-readinglevel/3.0.3b0/">PyPi</a>
+                </h2>
+                <p>
+                    Determine the reading age of text. Calculated using the 
+                    <a href="https://en.wikipedia.org/wiki/Automated_readability_index">Automated Readability Index</a>.
+                </p>
+                <div class="editor-entry">
+                    <input type="text" id="reading-level-demo" value="null" />
+                </div>
             </div>
+            <hr class="divider">
+            <div>
+                <h2>
+                    Reading Time -
+                    <a href="https://github.com/vixdigital/wagtail-reading-time">GitHub</a> /
+                    <a href="https://github.com/springload/draftail/tree/master/examples/components">PyPi</a>
+                </h2>
+                <p>
+                    Calculates the approximate reading time of text. 
+                    This is a port of the example Draftail
+                    <a href="https://github.com/springload/draftail/blob/master/examples/components/ReadingTime.js">
+                        reading time 
+                    </a>
+                    component.
+                </p>
+                <div class="editor-entry">
+                    <input type="text" id="reading-time-demo" value="null" />
+                </div>
+            </div>
+            <hr class="divider">
+            <h2>Templates and Tutorials</h2>
+            <p>
+                We've created a basic plugin template to make it easier for new developers to get to grips with creating their own plugins.
+                You can find it here on <a href="https://github.com/vixdigital/wagtail-plugin-base">GitHub</a>.
+            </p>
             <footer>
                 <a href="https://vix.digital" class="no-decoration">
                     <svg alt="VIX Digital Logo" width="48" height="48" class="topbar__logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
