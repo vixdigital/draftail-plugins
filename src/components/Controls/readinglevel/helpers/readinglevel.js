@@ -44,6 +44,7 @@ function readingLevel(text) {
     // Modify the help area to include the new information
     if (isFinite(readingAge)) {
         if (readingAge > 18) { readingAge = "18+" }
+        else if (readingAge < 4) { readingAge = 4 }
         return {
             age: readingAge,
             score: readabilityScore,
