@@ -12,4 +12,4 @@ View the demo at: https://vixdigital.github.io/draftail-plugins/
 - Reading Time - [GitHub](https://github.com/vixdigital/wagtail-reading-time) / [PyPi](https://pypi.org/project/wagtail-readingtime/)
 
 ### Plugin Development Template
-- Coming soon!
+- Plugin Template - [GitHub](https://github.com/vixdigital/wagtail-plugin-base)
