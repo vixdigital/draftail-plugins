@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ToolbarButton } from '../lib';
-import CalculateFleschReadingEase from '../lib/helpers/flesch';
+import CalculateFleschReadingEase from './helpers/flesch';
 
 const TOOLBAR_ICON = null;
 

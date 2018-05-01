@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { ToolbarButton } from '../lib';
-import CalculateColemanIndex from '../lib/helpers/coleman';
+import CalculateColemanIndex from './helpers/coleman';
 
 const TOOLBAR_ICON = null;
 
